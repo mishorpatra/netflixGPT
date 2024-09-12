@@ -15,6 +15,18 @@
     - Update Profile
     - Bug Fix:- if the user is logged in redirect user to /browse and vice versa
     - Unsubscribe to the onAuthStateChange event listner
+    - Add Hardcoded things to the constants file
+    - Register TMDB api, create an APP & get access token
+    - Get Data from TMDB - now playing movies list
+    - Custom Hooks for Now playing movies
+    - Create a Movie Slice
+    - Update Store with Movies data
+    - Planning for Main Container & Secondary Container
+    - Fetched data for trailer video
+    - update Store with trailer video data
+    - embedded the youtube video
+    - make it autoplay & mute
+    - added tailwind classes to make main conmtainer look awesome
 
 # Features
 
