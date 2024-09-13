@@ -26,7 +26,9 @@
     - update Store with trailer video data
     - embedded the youtube video
     - make it autoplay & mute
-    - added tailwind classes to make main conmtainer look awesome
+    - added tailwind classes to make main conmtainer look awesom
+    - added secondary movies
+    - top rated, popular and upcoming movies
 
 # Features
 

@@ -8,7 +8,7 @@ const MainContainer = () => {
     const movies = useSelector(store => store.movies.nowPlayingMovies)
     if(!movies) return
 
-    let mainMovie = movies[0]
+    let mainMovie = movies[(new Date().getSeconds())%movies.length]
 
     return (
         <div>
