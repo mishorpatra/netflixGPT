@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom"
 import Header from "./Header"
 import Login from './Login'
 import Browse from "./Browse"
@@ -8,7 +8,7 @@ const Body = () => {
 
     const dispatch = useDispatch()
 
-    const appRouter = createBrowserRouter([
+    const appRouter = createHashRouter([
         {
             path: "/",
             element: <Login />

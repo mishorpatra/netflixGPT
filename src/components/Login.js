@@ -84,13 +84,13 @@ const Login = () => {
         <div>
             <Header />
             <div className="absolute">
-                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/dae1f45f-c2c5-4a62-8d58-6e1b0c6b2d8e/6d1fb8a4-5844-42a4-9b01-1c6c128acf19/IN-en-20240827-TRIFECTA-perspective_WEB_c292a608-cdc6-4686-8dc8-405bfcf753af_large.jpg" 
+                <img className="h-screen object-cover" src="https://assets.nflxext.com/ffe/siteui/vlv3/dae1f45f-c2c5-4a62-8d58-6e1b0c6b2d8e/6d1fb8a4-5844-42a4-9b01-1c6c128acf19/IN-en-20240827-TRIFECTA-perspective_WEB_c292a608-cdc6-4686-8dc8-405bfcf753af_large.jpg" 
                     alt="background"
                 
                 />
             </div>
 
-            <form onSubmit={(e) => e.preventDefault() } className="w-3/12 bg-black absolute p-12 my-36 mx-auto left-0 right-0 text-white rounded-lg bg-opacity-80">
+            <form onSubmit={(e) => e.preventDefault() } className="w-full md:w-3/12 bg-black absolute p-12 my-36 mx-auto left-0 right-0 text-white rounded-lg bg-opacity-80">
                 <h1 className="text-3xl font-bold py-4">{ toggleSigninForm ? "Sign In":"Sign Up"}</h1>
                 <input 
                     type="text" 

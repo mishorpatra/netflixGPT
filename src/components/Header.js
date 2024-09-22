@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
-import { selectLanguage, toggleGptSearch } from "../utils/gptSlice";
+import { addSearchResults, selectLanguage, toggleGptSearch } from "../utils/gptSlice";
 import { SUPPORTED_LANGS } from "../utils/constants";
 
 const Header = () => {
@@ -24,6 +24,7 @@ const Header = () => {
 
     const toggleGptButton = () => {
       dispatch(toggleGptSearch())
+      dispatch(addSearchResults(null))
     }
 
     const handleChangeLang = (e) => {
@@ -46,7 +47,7 @@ const Header = () => {
           return () => subscribed()
     }, [])
     return (
-        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between items-center">
             <img className="w-44" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" 
                 alt="logo"
             
@@ -65,7 +66,7 @@ const Header = () => {
                 </button>
                 <img className="w-12 h-12" src={user.profileURL} />
                 <p>{user.displayName}</p>
-                <button className="p-2 underline cursor-pointer" onClick={() => handleSignout()}>Sign out</button>
+                <button className="p-2 underline cursor-pointer bg-white" onClick={() => handleSignout()}>Sign out</button>
             </div>}
             
         </div>

@@ -29,6 +29,14 @@
     - added tailwind classes to make main conmtainer look awesom
     - added secondary movies
     - top rated, popular and upcoming movies
+    - added gpt search page
+    - added gpt search bar
+    - added gpt slice to the redux store
+    - added multilanguage feature in the app
+    - Created Search bar for movie search
+    - Fetched Searched movies using keyword in TMDB
+    - Reused Movie List Component
+    - Made the app responsive
 
 # Features
 

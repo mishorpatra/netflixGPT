@@ -11,7 +11,7 @@ const MainContainer = () => {
     let mainMovie = movies[(new Date().getSeconds())%movies.length]
 
     return (
-        <div>
+        <div className="pt-[40%] md:pt-0 bg-black">
             <VideoTitle title={mainMovie.title} overview={mainMovie.overview}  />
             <VideoBackground movieId={mainMovie.id} />
 
